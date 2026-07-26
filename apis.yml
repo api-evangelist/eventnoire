@@ -1,8 +1,26 @@
 aid: eventnoire
 name: Eventnoire
-description: Eventnoire is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Eventnoire is an event discovery and ticketing platform centered on Black
+  culture, helping attendees find and buy tickets to concerts, festivals, parties,
+  and community events while giving organizers tools to create and manage events,
+  sell tickets, and grow their audiences. A Techstars-backed company, Eventnoire runs
+  consumer discovery at eventnoire.com alongside an organizer/partner portal and a
+  culture-focused blog. It currently exposes no public developer API, so this profile
+  captures the company's public web surface (blog, legal, organizer sign-up, attendee
+  login, support) and its domain security posture.
 url: https://raw.githubusercontent.com/api-evangelist/eventnoire/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.eventnoire.com/assets/shared/logo_og_eventNoire-50e43534b0f283f09bf66bb5aa693f5be97b796ceefa6e703f955f94c8278288.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Events
+- Ticketing
+- Event Discovery
+- Event Management
+- Culture
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eventnoire-domain-security.yml
 - type: Website
   url: https://eventnoire.com/
+- type: Blog
+  url: https://blog.eventnoire.com
+- type: SignUp
+  url: https://partner.eventnoire.com/sign-up-and-create-organizer-account
+- type: Login
+  url: https://events.eventnoire.com/login
+- type: Support
+  url: https://info.eventnoire.com/contact-us/
+- type: TermsOfService
+  url: https://info.eventnoire.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://eventnoirehq.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
